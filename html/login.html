@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Auto Balance
+        </title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script>
+            var nome, senha;
+            nome = document.formulario.nome.value;
+            senha = document.formulario.senha.value;
+            
+        </script>
+    </head>
+    <body>
+        <header class="cabeçario">
+            <div class="logo"></div>
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos?</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="login.html">Login/Cadastro</a></li>
+                </ul>
+        </header>
+        <main>
+            <section class="principal-login">
+            <div class="formulario">
+            <form name="formulario" method="get" action="formu.jsp">
+                <b>Usuario:</b>
+                <br>
+                <input type="text" maxlength="50" name="nome" size="50">
+                <br>
+                <b>Senha:</b>
+                <input type="password" minlength="8" name="senha" size="50">
+                <br>
+                <input type="button" value="Logar" onclick="verificar() ">
+            </form>
+
+        </div>
+    </section>
+        </main>
+    </body>
+</html>
