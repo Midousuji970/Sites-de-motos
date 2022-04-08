@@ -17,7 +17,7 @@ body,html{
   background-color: rgb(83, 45, 253);  
   margin: 10px;
 }
-
+/* Cabeçario do site, parte que fica em cima respectivamente sendo index, login, parceiros e quem-somos*/
 header{
     height: 10px;
     display: flex;
@@ -25,6 +25,7 @@ header{
     background-color: rgb(15, 15, 15);
     box-shadow: 0 0 1rem black;
 }
+/* Configuração da lista do cabeçario*/
 ul{
     display: flex;
 }
@@ -39,7 +40,7 @@ li a{
     color: white;
     text-decoration: none;
 }
-
+/* Background e texto do formulario*/
 .principal-login{
     color: rgb(0, 0, 0);
     text-align: center;
