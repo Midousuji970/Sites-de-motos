@@ -6,9 +6,12 @@
         </title>
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <script>
-            var nome, senha;
-            nome = document.formulario.nome.value;
-            senha = document.formulario.senha.value;
+            var cadnome, cadsenha, cadsenha2, cademail, cadcidade;
+            cadnome = document.formuCadastro.txtnome.value;
+            cadsenha = document.formuCadastro.txtsenha.value;
+            cadsenha2 = document.formuCadastro.txtsenha2.value;
+            cademail = document.formuCadastro.txtemail.value;
+            cadcidade = document.formuCadastro.txtcidade.value;
             
         </script>
     </head>
@@ -25,8 +28,8 @@
         <main>
             <section class="principal-cadastro">
             <div class="formulario">
-            <form name="formulario" method="get" action="formu.jsp">
-                
+            <form name="formuCadastro" method="get" action="formu.jsp">
+
                 <b>Usuario:</b>
                 <br>
                 <input type="text" maxlength="50" name="txtnome" size="50">
