@@ -23,20 +23,28 @@
                 </ul>
         </header>
         <main>
-            <section class="principal-login">
+            <section class="principal-cadastro">
             <div class="formulario">
             <form name="formulario" method="get" action="formu.jsp">
+                
                 <b>Usuario:</b>
                 <br>
-                <input type="text" maxlength="50" name="nome" size="50">
+                <input type="text" maxlength="50" name="txtnome" size="50">
                 <br>
                 <b>Senha:</b>
-                <input type="password" minlength="8" name="senha" size="50">
+                <input type="password" minlength="8" name="txtsenha" size="50">
                 <br>
-                <input type="button" value="Logar" onclick="verificar() ">
-            </form>
-            <a href="cadastro.html">Cadastre-se</a>
+                <b>Confirme a Senha:</b>
+                <input type="password" minlength="8" name="txtsenha2" size="50">
+                <br>
+                <b>E-mail:</b>
+                <input type="text" name="txtemail" size="50">
+                <br>
+                <b>Cidade:</b>
+                <input type="text" name="txtcidade" size="50">
 
+                <input type="button" value="Registrar" onclick="verificar() ">
+            </form>
         </div>
     </section>
         </main>

@@ -5,7 +5,7 @@
 }
 /* Fundo da Tela */
 body,html{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -22,33 +22,49 @@ header{
     height: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(15, 15, 15);
-    box-shadow: 0 0 1rem black;
+    background-color: rgb(255, 255, 255);
 }
 /* Configuração da lista do cabeçario*/
 ul{
     display: flex;
 }
 li{
-    color: white;
+    color: rgb(0, 0, 0);
     list-style-type: none;
     cursor: pointer;
     padding-left: 2rem;
     margin: 23px;
 }
 li a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-weight: bold;
 }
 /* Background e texto do formulario*/
+/* formulario do login.html*/
 .principal-login{
     color: rgb(0, 0, 0);
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 239, 239);
     border-radius: 2%;
     width: 400px;
     min-height: 100px;
     height: 200px;
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 10px;
+    display: flex;
+    text-align: left;
+}
+/* formulario do cadastro.html */
+.principal-cadastro{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(240, 239, 239);
+    border-radius: 2%;
+    width: 400px;
+    min-height: 100px;
+    height: 300px;
     margin-top: 5%;
     margin-left: 35%;
     padding: 10px;
