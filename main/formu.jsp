@@ -16,6 +16,8 @@
                     <li><a href="login.html">Login/Cadastro</a></li>
                 </ul>
         </header>
-        
+        <section>
+        <main class="jsp-principal"><b>Obrigado por se Cadastrar</b></main>
+    </section>
     </body>
 </html>
