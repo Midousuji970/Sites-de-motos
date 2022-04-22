@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>
             Auto Balance
         </title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="\sites\html\css\main.css">
         <script>
-            var cadnome, cadsenha, cadsenha2, cademail, cadcidade;
+            var cadnome, cadusuario, cadsenha, cadsenha2, cademail, cadcidade;
             cadnome = document.formuCadastro.txtnome.value;
+            cadusuario = document.formuCadastro.txtlogin.value;
             cadsenha = document.formuCadastro.txtsenha.value;
             cadsenha2 = document.formuCadastro.txtsenha2.value;
             cademail = document.formuCadastro.txtemail.value;
@@ -16,7 +18,7 @@
         </script>
     </head>
     <body>
-        <header class="cabeçario">
+        <header>
             <div class="logo"></div>
                 <ul>
                     <li><a href='index.html'>Home</a></li>
@@ -30,9 +32,13 @@
             <div class="formulario">
             <form name="formuCadastro" method="get" action="formu.jsp">
 
-                <b>Usuario:</b>
+                <b>Nome de Usuário:</b>
                 <br>
                 <input type="text" maxlength="50" name="txtnome" size="50">
+                <br>
+                <b>Login:</b>
+                <br>
+                <input type="text" maxlength="50" name="txtlogin" size="50">
                 <br>
                 <b>Senha:</b>
                 <input type="password" minlength="8" name="txtsenha" size="50">
