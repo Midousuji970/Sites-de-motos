@@ -6,39 +6,33 @@
             Auto Balance
         </title>
         <link rel="stylesheet" type="text/css" href="\sites\css\main.css">
-        <script>
-            var nome, senha;
-            nome = document.formuLogin.nome.value;
-            senha = document.formuLogin.senha.value;
-            
-        </script>
     </head>
     <body>
-        <header class="cabeçario">
-            <div class="logo"></div>
-                <ul>
+        <header>
+            <img class="logo" src="./img/home.png">
+            <nav>
+                <ul class="nav_links">
                     <li><a href='index.html'>Home</a></li>
-                    <li><a href="quem-somos.html">Quem Somos?</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="parceiros.html">Parceiros</a></li>
-                    <li><a href="login.html">Login/Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
+            </nav>
         </header>
-        <main>
-            <section class="principal-login">
-            <div class="formulario">
+
+        <main class="login_um">
+            <h1>Login</h1>
             <form name="formuLogin" method="get" action="login.jsp">
-                <b>Usuário:</b>
-                <br>
+                <label><b>Usuário:</b></label>
                 <input type="text" maxlength="50" name="nome" size="50">
                 <br>
-                <b>Senha:</b>
+                <label><b>Senha:</b></label>
                 <input type="password" minlength="8" name="senha" size="50">
                 <br>
                 <input type="button" value="Logar" onclick="verificar() ">
             </form>
             <a href="cadastro.html">Cadastre-se</a>
 
-        </div>
     </section>
         </main>
     </body>
