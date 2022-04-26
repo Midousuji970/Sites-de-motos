@@ -58,7 +58,6 @@ li,a{
 
 /* formulario do login.html */
 
-
 .login_um{
     width: 100%;
     height: 85vh;
@@ -68,7 +67,7 @@ li,a{
     align-items: center;
     justify-content: flex-start;
 
-    background: linear-gradient(to right,rgb(226, 21, 21), #eee, #ddd)
+    background: linear-gradient(to right,#ddd, #eee, #ddd)
 }
 .login_um form{
 
