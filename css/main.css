@@ -68,7 +68,7 @@ li,a{
     align-items: center;
     justify-content: flex-start;
 
-    background: linear-gradient(to right,#ddd, #eee, #ddd)
+    background: linear-gradient(to right,rgb(226, 21, 21), #eee, #ddd)
 }
 .login_um form{
 
