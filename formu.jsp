@@ -53,6 +53,9 @@
     stm.setString(6,vcidade) ;
 
     stm.executeUpdate();
+    
+    String redirectURL = "login.html";
+    response.sendRedirect(redirectURL);
 
 %>
     </body>

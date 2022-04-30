@@ -6,8 +6,8 @@
         <title>
             Auto Balance
         </title>
-        <link rel="stylesheet" type="text/css" href="css/main.css?=v1">
-
+        <link rel="stylesheet" type="text/css" href="css/main.css?=v5">
+        <script src="js/cadastro.js" defer></script>
     </head>
     <body>
         <header>
@@ -21,23 +21,21 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="principal-cadastro">
-            <div class="formulario">
+        <main class="cadastro_um">
             <form name="formuCadastro" method="get" action="formu.jsp">
-
                 <b>Nome de Usuário:</b>
-                <br>
                 <input type="text" maxlength="50" name="txtnome" size="50">
                 <br>
                 <b>Login:</b>
-                <br>
+                <i>Usuario e Login devem ser diferentes!</i>
                 <input type="text" maxlength="50" name="txtlogin" size="50">
                 <br>
                 <b>Senha:</b>
+                <i>Deve possuir 8 caracteres!</i>
                 <input type="password" minlength="8" maxlength="24" name="txtsenha" size="50">
                 <br>
                 <b>Confirme a Senha:</b>
+                <i>Os campos devem ser iguais!</i>
                 <input type="password" minlength="8" maxlength="24" name="txtsenha2" size="50">
                 <br>
                 <b>E-mail:</b>
@@ -46,10 +44,8 @@
                 <b>Cidade:</b>
                 <input type="text" name="txtcidade" size="50">
 
-                <input type="submit" value="Registrar">
+                <input class="btn1" type="button" value="Registrar" onclick="verificar() ">
             </form>
-        </div>
-    </section>
         </main>
     </body>
 </html>

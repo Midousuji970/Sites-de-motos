@@ -17,6 +17,7 @@
 /* Fundo da Tela */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 /* Parte de cima do site */
 /* Cabeçario do site, parte que fica em cima respectivamente sendo index, login, parceiros e quem-somos*/
@@ -24,7 +25,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
 /* Configuração da lista do cabeçario*/
@@ -57,6 +58,7 @@ li,a{
 }
 
 /* formulario do login.html */
+
 
 .login_um{
     width: 100%;
@@ -100,7 +102,60 @@ li,a{
 }
 
 
-.login_um form button{
+/*  */
+.links{
+    transition: all 0.3s ease 0s;
+}
+
+.links:hover{
+    color: blue;
+}
+
+/* formulario do cadastro.html */
+
+.cadastro_um{
+    width: 100%;
+    height: 1000px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: linear-gradient(to right,#ddd, #eee, #ddd)
+}
+
+.cadastro_um form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 2rem;
+    margin-top: 5%;
+    border-radius: 0.5rem;
+}
+
+.cadastro_um form label{
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.cadastro_um form input{
+    border: 0;
+    outline: 0;
+    margin: 5% 0px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro_um form input:focus{
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn1{
     cursor: pointer;
     margin-top: 3%;
     border: 0;
@@ -109,21 +164,12 @@ li,a{
     border-radius: 0.2rem;
     font-size: 1.5rem;
     font-weight: 400;
-    background: var(--blue);
+    background: var(--black);
     color: var(--white);
     transition: 0.3s ease-in-out;
 }
 
-.login_um form button:hover {
-    color: var(--blue);
-    background: var(--white);
-}
-
-.jsp-principal{
-    width: 400px;
-    height: 300px;
-    margin-top: 5%;
-    margin-left: 5%;
-    padding: 10px;
-    text-align: left;
+.btn1:hover{
+    color: var(--white);
+    background: var(--blue);
 }
