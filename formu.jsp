@@ -1,24 +1,4 @@
 <%@page language="java" import="java.sql.*"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Auto Balance
-        </title>
-        <link rel="stylesheet" type="text/css" href="\sites\css\main.css">
-    </head>
-    <body>
-        <header class="cabeçario">
-            <div class="logo"></div>
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href="quem-somos.html">Quem Somos?</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
-                    <li><a href="login.html">Login/Cadastro</a></li>
-                </ul>
-        </header>
-    
-
 <%
     // Cria as variaveis e armazena as informações digitadas pelo usuário
     String vnome  = request.getParameter("txtnome");
@@ -29,7 +9,7 @@
     String vcidade = request.getParameter("txtcidade");
 
     //variaveis para acessar o banco de dados
-    String banco    = "cadastro";
+    String banco    = "login_page";
     String endereco = "jdbc:mysql://localhost:3306/" + banco;
     String usuario  = "root";
     String senha    = "" ;
@@ -42,7 +22,7 @@
     //abrir a conexao com o banco
     Connection conexao = DriverManager.getConnection(endereco,usuario,senha) ;
 
-    String sql = "insert into alunos (nome,login,senha1,senha2,email,cidade)values(?,?,?,?,?,?)" ;
+    String sql = "insert into users (username,login,password,password2,email,cidade)values(?,?,?,?,?,?)" ;
 
     PreparedStatement stm = conexao.prepareStatement(sql);
     stm.setString(1,vnome) ;
@@ -58,6 +38,4 @@
     response.sendRedirect(redirectURL);
 
 %>
-    </body>
-</html>
 

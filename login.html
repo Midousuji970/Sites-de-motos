@@ -5,31 +5,31 @@
         <title>
             Auto Balance
         </title>
-        <link rel="stylesheet" type="text/css" href="css/main.css?=v3">
+        <link rel="stylesheet" type="text/css" href="css/main.css?=v5">
         <script src="js/login.js" defer></script>
     </head>
-    <body 
-    background>
+    <body>
         <header>
-            <h1>Auto Balance</h1>
+            <a href="index.html"><h1 class="h1-nav">Auto Balance</h1></a>
             <nav>
                 <ul class="nav_links">
                     <li><a href='index.html'>Home</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="requisicao.html">Requisição</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
         <main class="login_um">
-            <form name="formuLogin" method="get" action="login.jsp">
+            <form name="formuLogin" method="post" action="login.jsp">
                 <label><b>Usuário:</b></label>
-                <input type="text" maxlength="50" name="nome" size="50">
+                <input type="text" maxlength="50" id="lnome" name="nome" size="50">
                 <br>
                 <label><b>Senha:</b></label>
-                <input type="password" minlength="8" name="senha" size="50">
+                <input type="password" minlength="8" id="lsenha" name="senha" size="50">
                 <br>
-                <a href="senha.html" class="links">Lembrar Senha</a>
-                <input class="btn1" type="button" value="Logar" onclick="verificar() ">
+                <a href="senha.jsp" class="links">Lembrar Senha</a>
+                <button type='submit' class="btn1">Login</button> 
             </form>
             <a href="cadastro.html" class="links">Cadastre-se</a>
 

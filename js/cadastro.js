@@ -1,8 +1,7 @@
 
 const form = document.getElementById('formuCadastro');
 function verificar(){
-    var n,i,e;
-
+    var cNome,cLogin,cSenhaA,cSenhaB,cEmail,cCidade;
     cNome = document.formuCadastro.txtnome.value;
     cLogin = document.formuCadastro.txtlogin.value;
     cSenhaA = document.formuCadastro.txtsenha.value;

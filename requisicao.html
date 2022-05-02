@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Auto Balance
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/main.css?=v1">
+        <script src="js/requi.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1 class="h1-nav">Auto Balance</h1></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="requisicao.html">Requisição</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="requi-title">Requisite Um Automóvel</h1>
+            <article>
+                
+                <p class="requi-quem">Nosso site possui um limitado número de automóveis,
+                     e como temos uma avaliação ríspida precisamos que nossos clientes indiquem, 
+                     qual modelo de automóveis eles preferem!
+
+                </p>
+            </article>
+            <div class="requisi-um">
+                <form name="requisicao" method="get" action="requisit.jsp">
+                    <b>Marca</b>
+                    <i>Marca do Automóvel</i>
+                    <input type="text" maxlength="50" name="txtmarca">
+                    <b>Automóvel</b>
+                    <i>Nome do Automóvel</i>
+                    <input type="text" maxlength="50" name="txtauto">
+                    <b>Modelo</b>
+                    <i>Modelo do Automóvel</i>
+                    <input type="text" maxlength="50" name="txtmodelo">
+                    <b>Ano</b>
+                    <i>Somente números</i>
+                    <input type="text" maxlength="4" name="txtano">
+                    <b>Passageiros</b>
+                    <i>Somente números</i>
+                    <input type="text" maxlength="50" name="txtpass">
+                    <input class="btn1" type="button" value="ENVIAR" onclick="verificar() ">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
