@@ -239,19 +239,6 @@ li,a{
     color: blue;
 }
 
-/* login.html error */
-.falhaLogin{
-    color: var(--black);
-    text-align: center;
-    margin-top: 30vh;
-}
-.falhaLogin a{
-    color: #000000;
-}
-.falhaLogin a:hover{
-    color: var(--blue-light);
-}
-
 /* formulario do cadastro.html */
 
 .cadastro_um{
@@ -313,9 +300,4 @@ li,a{
 .btn1:hover{
     color: var(--white);
     background: var(--blue);
-}
-
-.cadastro_um h1{
-    color:red;
-    margin-top: 5px;
 }
