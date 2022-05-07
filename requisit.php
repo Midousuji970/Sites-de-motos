@@ -25,12 +25,11 @@
 <?php
 include_once('conexao.php');
 $marca = $_GET['txtmarca'];
-$automovel = $_GET['txtauto'];
 $modelo = $_GET['txtmodelo'];
 $ano = $_GET['txtano'];
 $passa = $_GET['txtpass'];
 $query = '';
-$sql_cadastro=mysqli_query($conexao ," INSERT INTO auto (marca, automovel, modelo, ano, passa) VALUES ('$marca','$automovel','$modelo','$ano','$passa')" );
+$sql_cadastro=mysqli_query($conexao ," INSERT INTO auto (marca, modelo, ano, passa) VALUES ('$marca','$modelo','$ano','$passa')" );
 $rows = mysqli_affected_rows($conexao);
 
 if($rows > 0){
