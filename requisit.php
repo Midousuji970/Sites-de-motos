@@ -24,27 +24,23 @@
         <main class='textcenter'>
 <?php
 include_once('conexao.php');
-
-$nome = $_POST['txtnome'];
-$user = $_POST['txtlogin'];
-$pass1 = $_POST['txtsenha'];
-$pass2 = $_POST['txtsenha2'];
-$email = $_POST['txtemail'];
-$cidade = $_POST['txtcidade'];
+$marca = $_GET['txtmarca'];
+$automovel = $_GET['txtauto'];
+$modelo = $_GET['txtmodelo'];
+$ano = $_GET['txtano'];
+$passa = $_GET['txtpass'];
 $query = '';
-$sql_cadastro=mysqli_query($conexao ," INSERT INTO usuario (nome, usuario, senha1, senha2, email, cidade) VALUES ('$nome','$user','$pass1','$pass2','$email','$cidade')" );
+$sql_cadastro=mysqli_query($conexao ," INSERT INTO auto (marca, automovel, modelo, ano, passa) VALUES ('$marca','$automovel','$modelo','$ano','$passa')" );
 $rows = mysqli_affected_rows($conexao);
 
 if($rows > 0){
-    echo '<script>alert("Cadastro Concluido!")</script>';
+    echo '<script>alert("Requisição Concluida!")</script>';
    
 }else{
     echo("Houve algum erro interno");
 }
-
 ?>
-
-<a href="login.php" class="textcenter"><h1>>Clique Aqui para fazer login<</h1></a>
+<a href="index.html" class="textcenter"><h1>>Obrigado por nos ajudar!<<br>>Veja nosso catalago de automoveis!<</h1></a>
 </main>
     </body>
 </html>

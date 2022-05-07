@@ -33,7 +33,7 @@ include_once('conexao.php');
                 <label><b>Senha:</b></label>
                 <input type="password" minlength="8" name="lsenha" size="50">
                 <br>
-                <a href="senha.jsp" class="links">Lembrar Senha</a>
+                <a href="senha.php" class="links">Lembrar Senha</a>
                 <button type='submit' class="btn1">Login</button> 
             </form>
             <a href="cadastro.html" class="links">Cadastre-se</a>

@@ -319,3 +319,13 @@ li,a{
     color:red;
     margin-top: 5px;
 }
+
+.textcenter{
+    align-items: center;
+    text-align: center;
+    padding-top: 15%;
+    color: var(--black);
+}
+.textcenter:hover{
+    color: var(--blue-light);
+}
