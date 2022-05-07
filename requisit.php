@@ -23,7 +23,13 @@
         </header>
         <main class='textcenter'>
 <?php
-include_once('conexao.php');
+
+$usuario = "root";
+$senha = "";
+$database = "login_page";
+$host = "localhost";
+
+$conexao = mysqli_connect($host, $usuario, $senha, $database);
 $marca = $_GET['txtmarca'];
 $modelo = $_GET['txtmodelo'];
 $ano = $_GET['txtano'];
